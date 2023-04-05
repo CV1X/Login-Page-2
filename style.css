@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap");
+
+
+
+*{
+box-sizing: border-box;
+}
+
+body {
+     padding: 0;
+     margin: 0;
+     font-family: "Inter", sans-serif;
+     padding-left: 250px;
+     padding-bottom: 100px;
+     padding-top: 50px;
+     background: linear-gradient(45deg,#131086,#b621f3);
+}
+
+.container {
+     min-height: calc(100vh - 50px * 2);
+     width: 1000px;
+     display: grid;
+     grid-template-columns: 50% 50%;
+     border-radius: 30px;
+     overflow: hidden;
+}
+
+.login-left {
+     display: flex;
+     flex-direction: column;
+     padding-left: 30px;
+     justify-content: content;
+     background-color: white;
+}
+
+.login-right {
+     background-color: #eee;
+     display: flex;
+     justify-content: center;
+}
+
+.login-header{
+     margin-bottom: 10px;
+}
+
+h1 {
+     font-size: 40px;
+     margin-bottom: 10px;
+}
+
+p{
+     opacity: .7;
+}
+
+.login-form {
+     width: 400px;
+}  
+
+.login-form-content {
+     display: flex;
+     flex-direction: column;
+     gap: 35px;
+     
+}
+
+.login-form-footer {
+     display: flex;
+     gap: 30px;
+     margin-top: 20px;    
+}
+
+.form-item label:not(.checkboxLabel) {
+     display: inline-block;
+     background-color: white;
+     margin-bottom: 10px;
+     position: absolute;
+     padding: 0 10px;
+     transform: translate(30px, -10px);
+     font-size: 14px;
+}
+
+input[type='text'],
+input[type='password']{
+     border: 1px solid black;
+     height: 45px;
+     padding: 0 2rem;
+     width: 100%;
+     outline: none;
+     transition: background .5s;
+     font-size: 18px;
+     border-radius: 100px;
+}
+
+.checkbox{
+     display: flex;
+     align-items: center;
+     gap: 7px;
+}
+
+input[type='checkbox'] {
+     width: 20px;
+     height: 20px;
+     accent-color: #131086;
+}
+
+button {
+     border: none;
+     color: white;
+     padding: 1rem;
+     border-radius: 100px;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 18px;
+     height: 55px;
+     cursor: pointer;
+     background: linear-gradient(45deg, #131086, #b621f3);
+}
+
+a{
+     flex: 6;
+     gap: 5px;
+     border: 1px solid black;
+     border-radius: 100px;
+     padding: .6rem;
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     color: black;
+     text-decoration: none;
+}
